@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>DEVICE</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -10,26 +13,28 @@
                 <a class="main-header-logo">
                     <img src="img/index-logo-1.svg" width="164" height="36" alt="Логотип Device">
                 </a>
-                <form class="search-form" action="#" method="get">
-                    <p>
-                        <label class="visually-hidden" for="search">Поиск по сайту</label>
-                        <input class="search-icon" id="search" type="text" name="search" value="" placeholder="Поиск по сайту">
-                    </p>
-                </form>
-                <ul class="user-navigation">
-                    <li>
-                        <a class="login-link" href="login.html">Войти</a>
-                    </li>
-                </ul>
-                <div class="compare">
-                    <p>
-                        <a class="compare-link" href="compare.html">Сравнить</a>
-                    </p>
-                </div>
-                <div class="basket">
-                    <p>
-                        <a class="basket-link" href="basket.html">Корзина</a>
-                    </p>
+                <div class="navigation-top">
+                    <form class="search-form" action="#" method="get">
+                        <p class="search-item">
+                            <label class="visually-hidden" for="search">Поиск по сайту</label>
+                            <input class="search-icon" id="search" type="text" name="search" value="" placeholder="Поиск по сайту">
+                        </p>
+                    </form>
+                    <ul class="user-navigation">
+                        <li>
+                            <a class="login-link" href="login.html">Войти</a>
+                        </li>
+                    </ul>
+                    <div class="compare">
+                        <p>
+                            <a class="compare-link" href="compare.html">Сравнить</a>
+                        </p>
+                    </div>
+                    <div class="basket">
+                        <p>
+                            <a class="basket-link" href="basket.html">Корзина</a>
+                        </p>
+                    </div>
                 </div>
                 <ul class="header-site-navigation">
                     <li><a href="catalog.html">Каталог товаров</a></li>
@@ -45,13 +50,13 @@
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul class="transport companies">
+                <ul class="transport-companies">
                     <li>Деловые Линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <p class="info-about-us">
-                    <a href="#">Подробнее о нас</a>
+                <p class="more-info">
+                    <a class="button" href="#">Подробнее о нас</a>
                 </p>
             </section>
             <section class="contacts">
@@ -61,14 +66,31 @@
                     <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей 15, Москва">
                 </p>
                 <p class="feedback">
-                    <a href="#">Напишите нам</a>
+                    <a class="button" href="#">Напишите нам</a>
                 </p>
             </section>
         </main>
-        <footer>
+        <footer class="main-footer">
             <a class="main-footer-logo">
                 <img src="img/index-logo-2.svg" width="164" height="36" alt="Логотип Device">
             </a>
+            <div class="user-columns">
+                <ul class="login">
+                    <li>
+                        <a class="login-link" href="login.html">Войти</a>
+                    </li>
+                </ul>
+                <div class="compare">
+                    <p>
+                        <a class="compare-link" href="compare.html">Сравнить</a>
+                    </p>
+                </div>
+                <div class="basket">
+                    <p>
+                        <a class="basket-link" href="basket.html">Корзина</a>
+                    </p>
+                </div>
+            </div>
             <div class="footer-contacts">
                 <p>г. Москва, ул. Строителей, 15</p>
                 <p>Тел.: +7 (495) 495-95-95</p>
@@ -79,26 +101,11 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <div class="footer-social">
-                <ul>
+                <ul class="social-networks">
                     <li><a class="social-button" href="#">Фейсбук</a></li>
                     <li><a class="social-button" href="#">Инстаграм</a></li>
                     <li><a class="social-button" href="#">Вконтакте</a></li>
                 </ul>
-            </div>
-            <ul class="login">
-                <li>
-                    <a class="login-link" href="login.html">Войти</a>
-                </li>
-            </ul>
-            <div class="compare">
-                <p>
-                    <a class="compare-link" href="compare.html">Сравнить</a>
-                </p>
-            </div>
-            <div class="basket">
-                <p>
-                    <a class="basket-link" href="basket.html">Корзина</a>
-                </p>
             </div>
             <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/index-logo-3.svg" width="27" height="35" alt="Логотип htmlacademy">
@@ -107,19 +114,19 @@
         <section class="modal-letter">
             <h2 class="visually-hidden">Напишите нам</h2>
             <form class="form-letter" action="#" method="post">
-                <p>
+                <p class="form-item">
                     <label for="name">Ваше имя:</label>
                     <input class="modal-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
                 </p>
-                <p>
+                <p class="form-item">
                     <label for="e-mail">Ваш e-mail:</label>
                     <input class="modal-e-mail" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
                 </p>
-                <p>
+                <p class="form-item">
                     <label for="message">Текст письма:</label>
                     <input class="modal-message" id="message" type="text" name="message" placeholder="В свободной форме">
                 </p>
-                <button class="send-button" type="submit">
+                <button class="button send-button" type="submit">
                     Отправить
                 </button>
                 <button class="close-button" type="submit">
@@ -137,6 +144,19 @@
             <button class="close-button" type="button">
                 Закрыть
             </button>
+        </section>
+        <section class="modal-catalog">
+            <h2 class="visually-hidden">
+                Навигация каталога
+            </h2>
+            <ul class="modal-catalog-navigation">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
         </section>
     </body>
 </html>
