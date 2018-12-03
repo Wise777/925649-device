@@ -8,42 +8,51 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="main-header">
-            <nav class="main-navigation">
+        <div class="container">
+            <header class="main-header">
                 <a class="main-header-logo">
                     <img src="img/index-logo-1.svg" width="164" height="36" alt="Логотип Device">
                 </a>
-                <div class="navigation-top">
-                    <form class="search-form" action="#" method="get">
-                        <p class="search-item">
-                            <label class="visually-hidden" for="search">Поиск по сайту</label>
-                            <input class="search-icon" id="search" type="text" name="search" value="" placeholder="Поиск по сайту">
-                        </p>
-                    </form>
-                    <ul class="user-navigation">
-                        <li>
-                            <a class="login-link" href="login.html">Войти</a>
+
+                <nav class="main-navigation">
+                    <div class="main-navigation-wrapper">
+                            <form class="search-form" action="#" method="get">
+                                    <label class="visually-hidden" for="search">Поиск по сайту</label>
+                                    <input class="search-icon" id="search" type="text" name="search" value="" placeholder="Поиск по сайту">
+                                    <button class="searc-button" type="submit">Найти</button>
+                            </form>
+                            <ul class="user-navigation">
+                                <li>
+                                    <a class="login-link" href="login.html">Войти</a>
+                                </li>
+                            </ul>
+                            <p class="compare">
+                                <a class="compare-link" href="compare.html">Сравнить</a>
+                            </p>
+                            <p class="basket">
+                                <a class="basket-link" href="basket.html">Корзина</a>
+                            </p>
+                    </div>
+
+                    <ul class="header-site-navigation">
+                        <li><a href="catalog.html">Каталог товаров</a>
+                            <ul class="modal-catalog-navigation">
+                                <li><a href="#">Виртуальная реальность</a></li>
+                                <li><a href="#">Моноподы для селфи</a></li>
+                                <li><a href="#">Экшн-камеры</a></li>
+                                <li><a href="#">Фитнес-браслеты</a></li>
+                                <li><a href="#">Умные часы</a></li>
+                                <li><a href="#">Квадрокоптеры</a></li>
+                            </ul>
                         </li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="guarantee.html">Гарантия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
-                    <div class="compare">
-                        <p>
-                            <a class="compare-link" href="compare.html">Сравнить</a>
-                        </p>
-                    </div>
-                    <div class="basket">
-                        <p>
-                            <a class="basket-link" href="basket.html">Корзина</a>
-                        </p>
-                    </div>
-                </div>
-                <ul class="header-site-navigation">
-                    <li><a href="catalog.html">Каталог товаров</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="guarantee.html">Гарантия</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
+
         <main class="container">
             <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
             <section class="about-us">
@@ -144,19 +153,6 @@
             <button class="close-button" type="button">
                 Закрыть
             </button>
-        </section>
-        <section class="modal-catalog">
-            <h2 class="visually-hidden">
-                Навигация каталога
-            </h2>
-            <ul class="modal-catalog-navigation">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
         </section>
     </body>
 </html>
